@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Brancher",
+  "version": "0.1.0",
+  "description": "Generate branch names from Jira ticket URL",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/cat.png",
+      "24": "images/cat.png",
+      "32": "images/cat.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["tabs", "storage", "<all_urls>", "activeTab", "scripting"]
+}
