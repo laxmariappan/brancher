@@ -38,9 +38,6 @@ setTimeout(() => {
     if (tiketTitle) {
       title = `ticket/${ticket}-${slugify(tiketTitle.textContent)}`;
       div.innerHTML=title;
-      
-    } else {
-      console.log("Ticket not found");
     }
   }
 
