@@ -33,12 +33,13 @@ setTimeout(() => {
       let div = document.createElement("div");
       div.id = "brancher-content";
       target.appendChild(div);
+      if (tiketTitle) {
+        title = `ticket/${ticket}-${slugify(tiketTitle.textContent)}`;
+        div.innerHTML = title;
+      }
     }
 
-    if (tiketTitle) {
-      title = `ticket/${ticket}-${slugify(tiketTitle.textContent)}`;
-      div.innerHTML=title;
-    }
+    
   }
 
   
